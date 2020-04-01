@@ -10,10 +10,10 @@ set a_out [list]
 for {set frame 0} {$frame < $num_steps } {incr frame} {
 	# Get the correct frame
 	set sel [atomselect top $selec1 frame $frame]
-  # To get the residue and id
+        # To get the residue and id
 	set d_out [lsort -unique [$sel get {resname resid}]]
 	#
-  set num_length [llength $d_out]
+        set num_length [llength $d_out]
 	#
 	for {set j 0} {$j < $num_length} {incr j} {
 		set residname [lindex $d_out $j]
@@ -23,7 +23,7 @@ for {set frame 0} {$frame < $num_steps } {incr frame} {
 		#
 		set all "$name$resid"
 		lappend a_out $all
-  }
+        }
 	#
 	# delete variable
 	$sel delete
@@ -40,4 +40,4 @@ dict for {item count} $counters {
 }
 close $outfile
 #
-#exit
+exit
