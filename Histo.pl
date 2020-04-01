@@ -42,7 +42,7 @@ my @nums   = sort { $a cmp $b } @fruits;
 #
 print "Resid\tFreq\n";
 for my $count (@nums) {
-		if ($InfoValues{$count} > 0) {
-    	print "$count\t$InfoValues{$count}\n";
-		}
+	if ($InfoValues{$count} > 0) {
+    		print "$count\t$InfoValues{$count}\n";
+	}
 }
