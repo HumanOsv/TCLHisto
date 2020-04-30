@@ -1,6 +1,6 @@
 #
 #
-set selec1 "protein within 3.5 of resname LIG"
+set selec1 "protein within 3.0 of resname LIG"
 #
 #
 set num_steps [molinfo top get numframes]
