@@ -1,5 +1,5 @@
 #
-#
+# noh protein and same residue as within 4 of resname UNL
 set selec1 "protein within 3.0 of resname LIG"
 #
 #
